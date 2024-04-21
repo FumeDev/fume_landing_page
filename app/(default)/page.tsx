@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'Home - Simple',
-  description: 'Page description',
+  title: 'Fume | AI SWE',
+  description: '10x engineering efficiency',
 }
 
 import Hero from '@/components/hero'
@@ -13,10 +13,8 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <Features />
       <FeaturesBlocks />
       <Testimonials />
-      <Newsletter />
     </>
   )
 }

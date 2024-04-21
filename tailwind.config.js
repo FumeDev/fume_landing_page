@@ -9,15 +9,15 @@ module.exports = {
     extend: {
       colors: {
         gray: {
-          100: '#FBFBFB',
-          200: '#EAEAEA',
-          300: '#DFDFDF',
-          400: '#999999',
+          900: '#FBFBFB',
+          800: '#EAEAEA',
+          700: '#DFDFDF',
+          600: '#999999',
           500: '#7F7F7F',
-          600: '#666666',
-          700: '#4C4C4C',
-          800: '#333333',
-          900: '#191919',
+          400: '#666666',
+          300: '#4C4C4C',
+          200: '#333333',
+          100: '#191919',
         },
         blue: {
           100: '#E6F0FD',
@@ -115,12 +115,21 @@ module.exports = {
       },
       animation: {
         float: 'float 3s ease-in-out infinite',
+        shimmer: "shimmer 2s linear infinite"
       },
       keyframes: {
         float: {
           '0%, 100%': { transform: 'translateY(0)', },
           '50%': { transform: 'translateY(-5%)', },
         },
+        shimmer: {
+          from: {
+            backgroundPosition: "0 0"
+          },
+          to: {
+            backgroundPosition: "-200% 0"
+          }
+        }
       },
       zIndex: {
         '-1': '-1',
@@ -131,3 +140,4 @@ module.exports = {
     require('@tailwindcss/forms'),
   ],
 };
+      

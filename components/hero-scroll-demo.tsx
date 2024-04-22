@@ -9,9 +9,9 @@ export function HeroScrollDemo() {
       <ContainerScroll
         titleComponent={
           <>
-            <h1 className="text-4xl font-semibold text-black dark:text-white mt-0 mb-0 py-0">
+            <h1 className="text-4xl font-semibold text-white dark:text-white mt-0 mb-0 py-0">
               Try the best <br />
-              <span className="text-4xl md:text-[6rem] font-bold mt-0 leading-none w-full">
+              <span className="text-4xl md:text-[6rem] font-bold mt-0 leading-none w-full text-white">
                 AI Software Developer
               </span>
             </h1>

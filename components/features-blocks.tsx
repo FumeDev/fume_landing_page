@@ -1,4 +1,3 @@
-import { ChatAltIcon } from "@heroicons/react/solid";
 
 export default function FeaturesBlocks() {
   return (

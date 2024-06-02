@@ -3,6 +3,7 @@ import VideoThumb from "@/public/images/hero-image.png";
 import ModalVideo from "@/components/modal-video";
 import { HeroScrollDemo } from "@/components/hero-scroll-demo";
 import { ButtonsCard } from "@/components/ui/tailwindcss-buttons";
+import { WobbleCards } from "./wobble-cards";
 
 export default function Hero() {
   return (
@@ -80,6 +81,9 @@ export default function Hero() {
             </div>
           </div>
 
+          <div style={{ marginTop: "100px" }}>
+            <WobbleCards/>
+          </div>
           {/* Hero image */}
           <HeroScrollDemo />
         </div>

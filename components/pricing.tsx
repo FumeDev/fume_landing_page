@@ -49,7 +49,7 @@ export const tiers: PricingTier[] = [
   {
     name: "Team",
     id: "1",
-    href: "/subscribe",
+    href: "https://calendly.com/fumedev/30min",
     price: { "1": "$250" },
     discountPrice: { "1": "" },
     description: `Crush the competition by building 10x faster. Fume turbocharges your engineering team`,
@@ -67,7 +67,7 @@ export const tiers: PricingTier[] = [
   {
     name: "Enterprise",
     id: "2",
-    href: "/contact-us",
+    href: "https://calendly.com/fumedev/30min",
     price: { "1": "Custom" },
     discountPrice: { "1": "" },
     description: `When you grow, need more power and flexibility.`,

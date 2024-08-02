@@ -49,7 +49,7 @@ export default function Testimonials() {
               Book a time to get started with Fume in 30 minutes
             </h2>
             <p className="text-xl text-gray-600" data-aos="zoom-y-out">
-              You will get 7 days of free trial. We also off on-premise deployment if needed.
+              You will get 7 days of free trial. We also offer on-premise deployment if needed.
             </p>
           </div>
           <Calendar />

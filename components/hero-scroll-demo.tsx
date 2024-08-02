@@ -10,9 +10,9 @@ export function HeroScrollDemo() {
         titleComponent={
           <>
             <h1 className="text-4xl font-semibold text-white dark:text-white mt-0 mb-0 py-0">
-              Try the best <br />
+              See it in action<br />
               <span className="text-4xl md:text-[6rem] font-bold mt-0 leading-none w-full text-white">
-                AI Software Developer
+                Watch the Launch
               </span>
             </h1>
           </>
@@ -20,9 +20,9 @@ export function HeroScrollDemo() {
       >
         <Image
           onClick={() => {
-            window.open("https://app.fumedev.com/playground", "_blank");
+            window.open("https://www.youtube.com/watch?v=WFY89Jf_3yQ", "_blank");
           }}
-          src={`/images/demo.png`}
+          src={`/images/video.png`}
           alt="hero"
           height={720}
           width={1400}

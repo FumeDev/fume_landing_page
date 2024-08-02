@@ -46,17 +46,13 @@ export default function Testimonials() {
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
             <h2 className="h2 mb-4">
-              Used by hundreds of engineers from fastest growing startups to
-              Fortune 500 companies
+              Book a time to get started with Fume in 30 minutes
             </h2>
             <p className="text-xl text-gray-600" data-aos="zoom-y-out">
-              You literally have no reason not to try Fume out for 14 days free. Sign
-              up now!
+              You will get 7 days of free trial. We also off on-premise deployment if needed.
             </p>
-            <button onClick={() => {window.location.href = "https://app.fumedev.com/signup"}} className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#418A89,45%,#AFD0CE,55%,#418A89)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 w-full sm:w-auto text-white mt-5">
-              Start Free Trial
-            </button>
           </div>
+          <Calendar />
 
           {/* Items */}
           {/* <div className="max-w-sm md:max-w-4xl mx-auto grid gap-2 grid-cols-4 md:grid-cols-5">
@@ -118,5 +114,37 @@ export default function Testimonials() {
         </div>
       </div>
     </section>
+  );
+}
+
+/* First make sure that you have installed the package */
+
+/* If you are using yarn */
+// yarn add @calcom/embed-react
+
+/* If you are using npm */
+// npm install @calcom/embed-react
+
+import Cal, { getCalApi } from "@calcom/embed-react";
+import { useEffect } from "react";
+function Calendar() {
+  useEffect(() => {
+    (async function () {
+      const cal = await getCalApi({ namespace: "30min" });
+      cal("ui", {
+        theme: "dark",
+        styles: { branding: { brandColor: "#5dd3c0" } },
+        hideEventTypeDetails: false,
+        layout: "month_view",
+      });
+    })();
+  }, []);
+  return (
+    <Cal
+      namespace="30min"
+      calLink="fumedev/30min"
+      style={{ width: "100%", height: "100%", overflow: "scroll" }}
+      config={{ layout: "month_view" }}
+    />
   );
 }

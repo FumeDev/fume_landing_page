@@ -4,6 +4,7 @@ import ModalVideo from "@/components/modal-video";
 import { HeroScrollDemo } from "@/components/hero-scroll-demo";
 import { ButtonsCard } from "@/components/ui/tailwindcss-buttons";
 import { WobbleCards } from "./wobble-cards";
+import { AppleCardsCarouselDemo } from "./cards-carousel";
 
 export default function Hero() {
   return (
@@ -46,9 +47,9 @@ export default function Hero() {
               className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4 mt-32"
               data-aos="zoom-y-out"
             >
-              AI Software Engineer to {' '}
+              Maintain Software on {' '}
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-teal-500 to-teal-400">
-                10x efficiency
+                Autopilot
               </span>
             </h1>
             <div className="max-w-3xl mx-auto">
@@ -57,7 +58,7 @@ export default function Hero() {
                 data-aos="zoom-y-out"
                 data-aos-delay="150"
               >
-                Ask technical questions, get step by step solutions, and get automated code changes.
+                Automate software back office with AI. Fume can write and run code for you.
               </p>
               <div
                 className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center"
@@ -65,18 +66,18 @@ export default function Hero() {
                 data-aos-delay="300"
               >
                 <div>
-                  <button  onClick={() => {window.location.href = "https://app.fumedev.com/signup"}} className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#418A89,45%,#AFD0CE,55%,#418A89)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 w-full sm:w-auto text-white">
-                    Start Free Trial
+                  <button  onClick={() => {window.location.href = "https://cal.com/fumedev/30min"}} className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#418A89,45%,#AFD0CE,55%,#418A89)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 w-full sm:w-auto text-white">
+                    Book a Demo
                   </button>
                 </div>
-                <div>
+                {/* <div>
                   <a
                     className="btn text-black bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-4 mt-3 sm:mt-0"
                     href="https://calendly.com/fumedev/30min"
                   >
                     Contact Sales
                   </a>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

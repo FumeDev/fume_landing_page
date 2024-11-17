@@ -47,10 +47,7 @@ export default function Hero() {
               className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4 mt-32"
               data-aos="zoom-y-out"
             >
-              Maintain Software on {' '}
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-teal-500 to-teal-400">
-                Autopilot
-              </span>
+              Serverless Engineering Workforce
             </h1>
             <div className="max-w-3xl mx-auto">
               <p
